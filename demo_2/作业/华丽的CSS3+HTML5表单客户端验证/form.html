@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表单客户端验证（CSS3+HTML5）</title>
+<link rel="stylesheet" media="screen" href="styles.css" rel="external nofollow"  >
+</head>
+<body>
+	<form class="contact_form" action="" method="post" name="contact_form">
+		<ul>
+			<li>
+				 <h2>联系我们</h2>
+				 <span class="required_notification">* 表示必填项</span>
+			</li>
+			<li>
+				<label for="name">用户名:</label>
+				<input type="text" name="name" placeholder="hacke2" required/>
+			</li>
+			<li>
+				<label for="email">电子邮件:</label>
+				<input type="email" name="email" placeholder="hacke2@qq.com" required/>
+				<span class="form_hint">正确格式为：hacke2@qq.com</span>
+			</li>
+			<li>
+				<label for="website">网站:</label>
+				<input type="url" name="website" placeholder="http://blog.csdn.net/hacke2" required pattern="(http|https)://.+"/>
+				<span class="form_hint">正确格式为：http://blog.csdn.net</span>
+			</li>
+			<li>
+				<label for="message">留言:</label>
+
+				<textarea name="message" cols="40" rows="6" required></textarea>
+			</li>
+			<li>
+				<button class="submit" type="submit">提交</button>
+			</li>
+</ul>
+	</form>
+</body>
+</html>
